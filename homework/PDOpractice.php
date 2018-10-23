@@ -1,8 +1,8 @@
 <?php
 echo "<h1>PDO Practice</h1>";
-$dsn = 'mysql:host=sql2.njit.edu;dbname=km487';
-$username = 'km487';
-$password = 'humidify0';
+$dsn = 'mysql:host=sql2.njit.edu;dbname="databasename"';
+$username = 'username';
+$password = 'password';
 try {
 	    $conn = new PDO($dsn, $username, $password);
 	    echo "Connected successfully<br>";
