@@ -2,7 +2,7 @@
 //---------------- [CONNECTING TO DATABASE] ----------------
 $hostname = "sql2.njit.edu";
 $username = "km487";
-$password = "humidify0";
+$password = "------";
 $conn = km487;
 try{
 	$conn = new PDO("mysql:host=$hostname;dbname=km487",
