@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <body background="geometric-blue-background.jpg">
         <title>Register</title>
+    </body>
     </head>
     <body>      			
 		    <div class="registration-box">

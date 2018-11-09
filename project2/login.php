@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <body background="geometric-blue-background.jpg">
         <title>Login</title>
     </head>
 
@@ -14,16 +15,20 @@
                  <button name='name' class="submit" type="submit">Login</button><br><br>
 
 	        	</form>
-<p>New User? <a href="https://web.njit.edu/~km487/is218/project2/register.php">Create Account</a></p>
+        <p>New User? <a href="register.php">Create Account</a></p>
       </div>
+</body>
 </html>
 
 <style>
 
 body {
+    /*
     background-color: #5abdd2;
+    */
     font-family: 'Ubuntu', sans-serif;
 }
+
 
 .login-box{
     background-color: #99c0ff;

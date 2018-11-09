@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<body background="geometric-blue-background.jpg">
+</body>
 <div class="action-box">
 <?php require "db.php" ?>
 
@@ -32,21 +34,21 @@ else {
 
 <style>
 .action-box{
-	background-color: #99c0ff;
-	color: black;
-	margin: auto;
-	padding: 20px;
-	width: 300px;
-	border: 10px solid black;
+    background-color: #99c0ff;
+    color: black;
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    border: 10px solid black;
 }
 
 .button {
-	width: 100px;
-	padding: 10px;
-	font-weight: bold;
-	font-size: 100%;
-	background: #3366cc;
-	color: #fff;
-	border: 1px solid #3366cc;
+    width: 100px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 100%;
+    background: #3366cc;
+    color: #fff;
+    border: 1px solid #3366cc;
 }
 </style>

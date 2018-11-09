@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<body background="geometric-blue-background.jpg">
+</body>
 <div class="logged-box">
 <h2><a href="login.php">Login Again</a></h2>
 
@@ -45,11 +47,11 @@ $results = runQuery($sql);
 echo "<h1>Questions</h1>";
 $dsn = 'mysql:host=sql2.njit.edu;dbname=km487';
 $username = 'km487';
-$password = '------';
+$password = 'humidify0';
 try {
 	    $conn = new PDO($dsn, $username, $password);
 	    echo "Connected successfully<br>";
-	    $sql = "SELECT * FROM questions WHERE id < 7";
+	    $sql = "SELECT * FROM questions WHERE id < 20";
 	    $q = $conn->prepare($sql);
 	    $q->execute();
 	    $results = $q->fetchAll();
@@ -85,8 +87,11 @@ $conn = null;
 ?>
 </div>
 
-<p>Insert new Questions?</p>
-<p><a href="questions.php">New Question</a> Click here to insert a new question.</p>
+<p>Insert New Question?</p>
+
+<form action="questions.php">
+    <input type="submit" class="submit" value="New Question" />
+</form><br>
 
 <style>
 .logged-box{
@@ -100,8 +105,23 @@ $conn = null;
 
 h2 {
     color: red;
+    /*
     text-shadow: 3px 2px white;
+    */
 }
+
+.submit {
+    cursor: pointer;
+    background: #3366cc;
+    color: #fff;
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    }
 </style>
 
 </div>
