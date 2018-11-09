@@ -9,7 +9,7 @@
 echo "<h1>Questions</h1>";
 $dsn = 'mysql:host=sql2.njit.edu;dbname=km487';
 $username = 'km487';
-$password = 'humidify0';
+$password = '-----';
 
 $owneremail = $_POST['owneremail'];
 $title = $_POST['title'];
