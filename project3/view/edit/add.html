@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Add Data</title>
+</head>
+ 
+<body background="../../images/geometric-blue-background.jpg">
+<link rel="stylesheet" href="../../main.css">
+<div class="add-box">
+    <a href="index.php" class="home">Back to Questions Page</a><br>
+	<h1>Insert New Question</h1>
+    <form action="add.php" method="post" name="form1">
+        <table width="25%" border="0">
+            <tr> 
+                <td>Email</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr> 
+                <td>Title</td>
+                <td><input type="text" name="title"></td>
+            </tr>
+            <tr> 
+                <td>Body</td>
+                <td><input type="text" name="body"></td>
+            </tr>
+			<tr> 
+				<td>Skills</td>
+                <td><input type="text" name="skills"></td>
+            </tr>
+            <tr> 
+                <td></td>
+                <td><input type="submit" name="Submit" value="Add Question" class="add"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
