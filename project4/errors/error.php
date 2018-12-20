@@ -4,7 +4,7 @@
 <h1>Errors</h1>
 <p><?php echo $error; ?></p>
 
-<!----Email Error---->
+<!--Email Error-->
 <p>
 <?php 
 if (count($goodEmail) > 1) {
@@ -18,7 +18,7 @@ if (count($goodEmail) > 1) {
 ?>
 </p>
 
-<!----Password Error----->
+<!--Password Error-->
 <p>
 <?php 
 if (count($goodPassword) > 1) {
@@ -31,7 +31,7 @@ if (count($goodPassword) > 1) {
 } 
 ?>
 </p>
-<!----Check FirstName/Lastname Error----->
+<!--Check FirstName/Lastname Error-->
 <p>
 <?php if (count($goodFirst) > 1) {
   foreach($goodFirst as $message) {
@@ -55,7 +55,7 @@ if (count($goodLast) > 1) {
 }
 ?>
 </p>           
-<!----Check Birthday Error----->
+<!--Check Birthday Error-->
 <p>
 <?php 
 if (count($goodBirthday) > 1) {
@@ -69,7 +69,7 @@ if (count($goodBirthday) > 1) {
 ?>
 
 </p>              
-<!----Check Question Name Error----->                
+<!--Check Question Name Error-->                
 <p>
 <?php 
 if (count($goodName) > 1) {
@@ -82,7 +82,7 @@ if (count($goodName) > 1) {
 }
 ?>
 </p>
-<!----Check Question Body Error----->                
+<!--Check Question Body Error-->                
 <p>
 <?php 
 if (count($goodBody) > 1) {
@@ -95,7 +95,7 @@ if (count($goodBody) > 1) {
 }
 ?>
 </p>               
-<!----Check Questions Skills Error----->                
+<!--Check Questions Skills Error-->                
 <p>
 <?php 
 if (count($goodSkills) > 1) {
