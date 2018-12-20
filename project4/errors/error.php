@@ -4,7 +4,7 @@
 <h1>Errors</h1>
 <p><?php echo $error; ?></p>
 
-<!----Email Error----->
+<!----Email Error---->
 <p>
 <?php 
 if (count($goodEmail) > 1) {
