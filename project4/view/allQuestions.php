@@ -13,7 +13,7 @@
           <li><a class="active" href="allQuestions.php">All Questions</a></li>
           <li style="float:right"><a href="../index.php">Log Off</a></li>
         </ul>
-        <!----------nav bar end------------->
+        <!---nav bar end----->
 <hr>
 <h1>All User Questions:</h1><p>Refresh if votes do not update automatically</p>
 <form action='index.php' method='post'>
