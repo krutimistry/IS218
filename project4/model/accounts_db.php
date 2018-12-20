@@ -1,8 +1,6 @@
 <?php
 function getUser($email, $password) {
     global $db;
-
-    // Query database for existing user
     $query = 'SELECT email FROM accounts WHERE email = :email';
     $statement = $db->prepare($query);
     $statement->bindValue(':email', $email);
@@ -35,8 +33,6 @@ function getUser($email, $password) {
 
 function createUser($firstName, $lastName, $birthday, $email, $password) {
     global $db;
-
-    // Register new user
     $query = "INSERT INTO accounts (email, fname, lname, birthday, password) VALUES (:email, :firstName, :lastName, :birthday, :password)"; 
     $statement = $db->prepare($query);
     $statement->bindValue(":email", $email);
@@ -50,8 +46,6 @@ function createUser($firstName, $lastName, $birthday, $email, $password) {
 
 function getName($email) {
     global $db;
-
-    // Query database for current user information
     $query = "SELECT fname, lname FROM accounts WHERE email = :email";
     $statement = $db->prepare($query);
     $statement->bindValue(':email', $email);
